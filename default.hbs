@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
@@ -26,8 +27,8 @@
         {{! Everything else gets inserted here }}
         {{{body}}}
 
-        <footer class="site-footer clearfix">
-            <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+        <footer class="site-footer">
+            <section class="copyright"><a href="{{@blog.url}}">Edgar A. Baeza</a> &copy; {{date format="YYYY"}}</section>
         </footer>
 
     </div>
