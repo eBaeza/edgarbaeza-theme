@@ -5,6 +5,10 @@ $white: #FEFAF1;
 $green: #4CD4B0;
 
 // My custom styles for home page
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -24,10 +28,15 @@ body {
 }
 
 a {
-	color: $white;
+	color: $green;
+	text-decoration: none;
 
 	&:hover,
 	&:focus {
+		text-decoration: underline;
+	}
+
+	&:visited {
 		color: $green;
 	}
 }
@@ -35,7 +44,7 @@ a {
 .blog-logo {
 	border-radius: 50%;
 	border: 6px solid $white;
-	max-width: 280px;
+	max-width: 245px;
 }
 
 .site-wrapper {
